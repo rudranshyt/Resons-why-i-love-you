@@ -55,3 +55,12 @@ jar.addEventListener("click", () => {
   void note.offsetWidth;
   note.classList.add("animate-note");
 });
+
+memoryData.forEach((item) => {
+  const img = new Image();
+  img.src = `images/${item.image}`;
+
+  const audio = new Audio();
+  audio.src = `music/${item.audio}`;
+  audio.load();
+});
